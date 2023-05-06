@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Graphique CSV avec Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts-graph.js"></script>
+    <style type="text/css">
+      .chart {
+        position: relative;
+        width: 50vw;
+      }
+    </style>
+</head>
+<body>
+  <div class="chart">
+    <canvas id="myChart"></canvas>
+    <canvas id="myChart2"></canvas>
+  </div>
+    
+    <script>createChart_DoubleAxis("myChart");</script>
+    <script>createChart_SingleAxis("myChart2");</script>
+</body>
+</html>
